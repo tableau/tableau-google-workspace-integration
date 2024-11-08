@@ -30,7 +30,7 @@ In order for Tableau’s Add On to use your new connected app, we need the app�
 
 ![tableau cloud url](./screenshots/url.png)
 
-Instead of your Tableau Cloud username + password, you will need to use a Personal Access Token to login*. If you’ve never created a PAT before, follow the instructions [here](https://help.tableau.com/current/pro/desktop/en-us/useracct.htm#create-and-revoke-personal-access-tokens) to create one.  Just note that PATs are short-lived, if you don’t use it again within a 15 day window it will expire.
+Instead of your Tableau Cloud username + password, you will need to use a Personal Access Token to login*. If you’ve never created a PAT before, follow the instructions [here](https://help.tableau.com/current/pro/desktop/en-us/useracct.htm#create-and-revoke-personal-access-tokens) to create one.  Note that Personal Access Tokens (PATs) do expire, so it's important to verify their expiration dates.
 
 ![addon manager login screen](./screenshots/addon-manager-login.png)
 
