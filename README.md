@@ -171,3 +171,11 @@ When the add-on is first installed, we prompt the user to configure it with a Ta
 ### What if the customer’s Google email doesn’t match their Tableau username?
 
 Our initial launch for this add-on will require the Google email to match their Tableau username.  However, we understand that this will be a problem for many Tableau Server customers.  It’s a bit challenging, as their Tableau usernames may not exist in Google Workspace at all.  It’s possible for Google Workspace admins to [create custom user attributes](https://support.google.com/a/answer/6208725?hl=en#zippy=%2Cadd-a-new-custom-attribute), so this will likely be the future approach.  However we still need to figure out how to query for those custom user attributes from our add-on.
+
+### Does this support custom views?
+
+Yes, if you copy/paste the link to a custom view in the add-on it will work the same as any other view.
+
+### What kind of URLs are supported?
+
+URLs that link to views, custom views, and Pulse metrics are supported.  One exception is URLs obtained by right clicking on a view link in Tableau.  These tend to have a URL pattern like ```https://<pod-name>.tableau.com/#/site/<site-name>/redirect_to_view/<some-number>```.  Unfortunately, there is no way to determine what view this is based on that number.  Instead, open the view in your web browser and get the view URL from the browser window.
