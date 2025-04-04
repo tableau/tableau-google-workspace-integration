@@ -147,9 +147,11 @@ In terms of what data is shared, we can differentiate between data shared with o
 
   - _Site Config Details_ - The details required for our add-on to authenticate your users to Tableau.  This includes the URL and site name of your Tableau site, as well as the connected app details (client id, secret id, secret value)
 
+  - _User Preferences_ - When you select a site as "default", we store that selection in a database.
+
   - _Telemetry_ - We log activities within the app, such as a user opening a dashboard named X.  No actual data is logged, just metadata from Tableau.
 
-* What stuff gets stored within Google Docs/Slides:
+* What gets stored within Google Docs/Slides:
 
   - _Images_ - when you embed a view or metric in a Google Doc/Slide, we just insert a static image.  This is similar to if a user took a screenshot of a dashboard and pasted it into a Doc.  
   
@@ -178,4 +180,4 @@ Yes, if you copy/paste the link to a custom view in the add-on it will work the 
 
 ### What kind of URLs are supported?
 
-URLs that link to views, custom views, and Pulse metrics are supported.  One exception is URLs obtained by right clicking on a view link in Tableau.  These tend to have a URL pattern like ```https://<pod-name>.tableau.com/#/site/<site-name>/redirect_to_view/<some-number>```.  Unfortunately, there is no way to determine what view this is based on that number.  Instead, open the view in your web browser and get the view URL from the browser window.
+URLs that link to views, custom views, and Pulse metrics are supported.  One exception is URLs obtained by right clicking on a view link in Tableau.  These tend to have a URL pattern like ```https://<pod-name>.online.tableau.com/#/site/<site-name>/redirect_to_view/<some-number>```.  Unfortunately, there is no way to determine what view this is based on that number.  Instead, open the view in your web browser and get the view URL from the browser window.
