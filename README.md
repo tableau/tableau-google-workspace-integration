@@ -132,7 +132,7 @@ Any object that contains a hyperlink to a Tableau view or Pulse metric will auto
 
 ### Does this add-on work for both Tableau Cloud and Server?
 
-Yes, this add-on supports both Tableau Cloud and Server.  
+Yes, this add-on supports both Tableau Cloud and Tableau Server (version 2023.3 and newer).  
 
 For Tableau Server customers, the PreviewLink and Smartchip features are not available.  This is because Google Workspace add-ons are required to set a global allowlist for URLs to match.  Tableau Cloud is easy because all URLs begin with ```https://<pod-name>.online.tableau.com```.  However, each customer will have unique URLs to their Tableau Server environments and there's no way to dynamically set this allowlist.
 
