@@ -43,7 +43,7 @@ Then have your Tableau site admin fill out the fields below within the add-on.  
 | Property         | Description                                                                                                                  |
 | Label            | \[Optional] Friendly name for your Tableau site (uses Tableau Site, if left blank)                                           |
 | Tableau Base URL | The hostname of your Tableau environment (see below image)                                                                   |
-| Tableau Site     | Your Tableau site name, as it appears in the URL (see below image).  Note that this property is case sensitive.              |
+| Tableau Site     | Your Tableau site name, as it appears in the URL (see below image).  Note that this property is case sensitive.  If using Tableau Server's default site, leave this field blank            |
 | User Mapping     | This dropdown specifies how to map your Google Workspace user to your Tableau username.  Currently, only Email is supported. |
 | Client ID        | Tableau connected app’s Client ID                                                                                            |
 | Secret ID        | Tableau connected app’s Secret ID                                                                                            |
