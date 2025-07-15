@@ -7,6 +7,12 @@ A major release means updating the listing on the Google Workspace Marketplace. 
 #### Minor Release (ex. version 2.0.X)
 A minor release will include bug fixes and minor changes.  Since we're not adding new features or requesting new permissions, there is no need to updating the marketplace listing.  There is no need for customers to do anything for minor releases, the changes are automatically available.
 
+## Minor Release: 2.1.0 - July 15, 2025
+This update fixed some localization issues for Tableau Pulse.
+* Metric titles within the images would not render for non-latin alphabet languages (japanese, korean, etc).
+* Pulse insights were always in English, now they are generated in the user's Google Workspace language.  This applies within the right side panel (addon) as well as for link unfurling.
+* Some error messages on the initial setup page were too generic, adding more details to help with troubleshooting issues
+
 ## Major Release: 2.0.0 - April 4, 2025
 This update adds the following new functionality to the add-on:
 * Embed images of your views and Pulse metrics within Google Docs & Slides.
