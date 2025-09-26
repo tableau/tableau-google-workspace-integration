@@ -136,7 +136,7 @@ Yes, this add-on supports both Tableau Cloud and Tableau Server (version 2023.3 
 
 For Tableau Server customers, the PreviewLink and Smartchip features are not available.  This is because Google Workspace add-ons are required to set a global allowlist for URLs to match.  Tableau Cloud is easy because all URLs begin with ```https://<pod-name>.online.tableau.com```.  However, each customer will have unique URLs to their Tableau Server environments and there's no way to dynamically set this allowlist.
 
-Additionally, Tableau Server customers will need to ensure our add-on can communicate with your Tableau Server.  Many customers lock down their Tableau Servers behind a firewall/VPC to prevent public access.  If this is the case, you will need your network security team to add a ingress rule allowing traffic from our add-on.  Our add-on is hosted at ```https://addon.googleworkspaces.tableau.com``` which corresponds to a static IP address ```34.173.205.92```, so use that for the allow-list rule.
+Additionally, Tableau Server customers will need to ensure our add-on can communicate with your Tableau Server.  Many customers lock down their Tableau Servers behind a firewall/VPC to prevent public access.  If this is the case, you will need your network security team to add a ingress rule allowing traffic from our add-on.  Our add-on is hosted at ```https://addon.googleworkspaces.tableau.com``` which corresponds to a static IP address ```34.173.205.92:443```, so use that for the allow-list rule.
 
 
 ### What data is stored on the app?
