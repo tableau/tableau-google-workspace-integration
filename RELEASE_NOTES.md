@@ -7,6 +7,9 @@ A major release means updating the listing on the Google Workspace Marketplace. 
 #### Minor Release (ex. version 2.0.X)
 A minor release will include bug fixes and minor changes.  Since we're not adding new features or requesting new permissions, there is no need to updating the marketplace listing.  There is no need for customers to do anything for minor releases, the changes are automatically available.
 
+## Minor Release: 2.1.1 - September 26, 2025
+This update replaces the static IP address used for Tableau Server environments behind a firewall.  The previous IP address listed turned out to be used only for inbound traffic (http requests _to_ our app), so we added a static outbound IP address (http requests _from_ our app) to our infrastructure.  
+
 ## Minor Release: 2.1.0 - July 15, 2025
 This update fixed some localization issues for Tableau Pulse.
 * Metric titles within the images would not render for non-latin alphabet languages (japanese, korean, etc).
